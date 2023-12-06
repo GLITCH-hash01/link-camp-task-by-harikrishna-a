@@ -11,8 +11,10 @@ export default function(){
                     <p className="text-4xl">All Kerala Techno-Managerial Conclave 2023</p>
                     <p className="text-xl">November 4th-5th @ College of Engineering Chengannur</p>
                     <Timer/>
+                    <button className="p-3 px-5 border rounded-full">Register now</button>
                 </div>
-                <img src="./src/assets/wave-haikei (3).svg" alt="" className="w-screen"/>
+                <img src="./src/assets/layered-waves-haikei.svg" alt="" className="w-screen"/>
+                
             </section>
         </>
     )
