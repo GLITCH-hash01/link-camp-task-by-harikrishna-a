@@ -4,7 +4,7 @@ import Timer from "../Components/Timer"
 export default function(){
     return(
         <>
-            <section className="w-screen h-screen text-white bg-black">
+            <section className="w-screen h-screen text-white bg-black bg-center bg-contain" style={{backgroundImage:'url("./src/assets/DSC08047.JPG")',borderImage:'fill 0 linear-gradient(#000,#0003)'}}>
                 <Navbar />
                 <div className="flex flex-col justify-center h-[80%] items-center">
                     <h1 className="text-6xl font-bold">EMERGENCE 3.0</h1>
