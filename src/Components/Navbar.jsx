@@ -26,7 +26,7 @@ export default function () {
               <div className={"w-[60%] bg-white transition-all duration-300 h-[1px] "+(NavbarState? "hidden":"")}></div>
               <div className={"w-[60%] bg-white transition-all duration-300 h-[1px] "+(NavbarState? "-rotate-45 -translate-y-[5px]":"")}></div>              
             </div>
-            <nav className={'absolute flex flex-col justify-center top-[100%] w-full transition-all duration-100 bg-black '+(NavbarState? "h-fit":"h-0 hidden")}>
+            <nav className={'absolute flex z-50 flex-col justify-center top-[100%] w-full transition-all duration-100 bg-black '+(NavbarState? "h-fit":"h-0 hidden")}>
                 <a href="#Home" className="flex justify-center p-5">Home</a>
                 <a href="#About" className="flex justify-center p-5">About</a>
                 <a href="#Events" className="flex justify-center p-5">Events</a>
