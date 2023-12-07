@@ -12,7 +12,6 @@ export default function()
     const ToggleEventTab=(eventnum)=>{
         setEventDetailTab(!eventDetailTab)
         setEventView(eventnum)
-
     }
     
     const EventsCollection=collection(db,"events")
@@ -36,19 +35,16 @@ export default function()
     useEffect(()=>{console.log(eventDetailTab)},[eventDetailTab])
     return(
         <>
-            <section className="relative w-screen p-10 m-5 h-fit">
-                <h1 className="text-5xl text-white font-bold relative before:w-[5%] before:h-2 before:bg-white before:absolute before:-bottom-2 before:rounded-full">Events</h1>
-                <div className="flex flex-wrap w-screen gap-10 pt-20">
+            <section className="relative w-screen p-10 m-5 h-fit max-[710px]:m-0 max-[710px]:p-0" id="Events" data-aos="fade-up">
+                <h1 className="text-5xl text-white max-[710px]:px-10  font-bold relative before:w-[70px] before:h-2 before:bg-white before:absolute before:-bottom-4 before:rounded-full">Events</h1>
+                <div className="flex flex-wrap w-screen gap-10 pt-20 max-[710px]:justify-center">
                     <EventDetail currentState={eventDetailTab} Close={()=>{setEventDetailTab(!eventDetailTab);console.log(eventDetailTab);}} {...eventList[eventView]}/>
                     {
                         eventList.map((events,i)=>{
                             return <EventCard key={events.EventName} id={i} EventName={events.EventName} EventImage={events.EventImage} EventDate={events.EventDate} SetState={ToggleEventTab}/>
-                        })
-                        
+                        })  
                     }
-
                 </div>
-                
             </section>
         </>
     )

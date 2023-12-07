@@ -29,22 +29,22 @@ export default function (){
       
     return(
         <>
-            <div className="flex gap-10 p-11">
+            <div className="flex gap-10 p-11 max-[540px]:gap-5">
                 <div className="flex flex-col items-center">
-                    <p className="text-5xl">{days.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})}</p>
-                    <p className="text-2xl font-light">days</p>
+                    <p className="text-5xl max-[540px]:text-lg">{days.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})}</p>
+                    <p className="text-2xl font-light max-[540px]:text-lg">days</p>
                 </div>
                 <div className="flex flex-col items-center">
-                    <p className="text-5xl">{hours.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})}</p>
-                    <p className="text-2xl font-light">hours</p>
+                    <p className="text-5xl max-[540px]:text-lg">{hours.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})}</p>
+                    <p className="text-2xl font-light max-[540px]:text-lg">hours</p>
                 </div>
                 <div className="flex flex-col items-center">
-                    <p className="text-5xl">{minutes.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})}</p>
-                    <p className="text-2xl font-light">minutes</p>
+                    <p className="text-5xl max-[540px]:text-lg">{minutes.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})}</p>
+                    <p className="text-2xl font-light max-[540px]:text-lg">minutes</p>
                 </div>
                 <div className="flex flex-col items-center">
-                    <p className="text-5xl">{seconds.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})}</p>
-                    <p className="text-2xl font-light">seconds</p>
+                    <p className="text-5xl max-[540px]:text-lg">{seconds.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})}</p>
+                    <p className="text-2xl font-light max-[540px]:text-lg">seconds</p>
                 </div>
             </div>
         </>
